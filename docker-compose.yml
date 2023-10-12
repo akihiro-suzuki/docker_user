@@ -1,0 +1,9 @@
+services:
+  go:
+    build: .
+    volumes:
+      - .:/go/src/app
+    ports:
+      - "28080:80"
+    tty: true
+    user: myuser
